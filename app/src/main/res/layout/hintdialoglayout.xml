@@ -1,0 +1,70 @@
+<LinearLayout
+    android:id="@+id/container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dip"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/hintdialog_top_bg"
+        android:gravity="center"
+        android:textColor="#333333"
+        android:textSize="16sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#d8d6d7"/>
+
+    <TextView
+        android:id="@+id/dialog_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#d8d6d7"
+        android:gravity="center"
+        android:textColor="#333333"
+        android:textSize="14sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="#d8d6d7"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#c6c6c6"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_ok"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/hintdialog_selector_cancel"
+            android:textColor="#FF5494F2"
+            android:textSize="14sp"/>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="45dp"
+            android:background="#c6c6c6"/>
+
+        <Button
+            android:id="@+id/button_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/hintdialog_selector_ok"
+            android:textColor="#FF5494F2"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+</LinearLayout>

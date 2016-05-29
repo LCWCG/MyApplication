@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE5E3E4"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_top_view"
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:background="@color/top_bar_bg_color"
+        android:orientation="horizontal"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@color/top_bar_bg_color">
+
+        <ImageButton
+            android:id="@+id/ib_proj_parti_back"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_selector_bg"
+            android:src="@drawable/back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="项目详情"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_proj_parti_1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1.0">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="借款人信息"
+                android:textColor="#333333"
+                android:textSize="14sp"/>
+
+            <View
+                android:id="@+id/view_proj_parti_1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:background="#fb5d5d"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_proj_parti_2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1.0">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="风控信息"
+                android:textColor="#333333"
+                android:textSize="14sp"/>
+
+            <View
+                android:id="@+id/view_proj_parti_2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:background="#fb5d5d"
+                android:visibility="invisible"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_proj_parti_3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1.0">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="投资记录"
+                android:textColor="#333333"
+                android:textSize="14sp"/>
+
+            <View
+                android:id="@+id/view_proj_parti_3"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:background="#fb5d5d"
+                android:visibility="invisible"/>
+
+            <Button
+                android:id="@+id/btn_proj_parti_hint_number"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/oval"
+                android:text="0"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#cccccc"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/proj_parti_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btn_proj_parti_affirm"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/btn_proj_parti_affirm"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/home_btn_selector"
+            android:text="立即投资"
+            android:textColor="#ffffff"
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

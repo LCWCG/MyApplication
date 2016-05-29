@@ -1,0 +1,29 @@
+<LinearLayout
+    android:id="@+id/container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dip"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/dialog_content1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/hintdialog_top_bg2"
+        android:textColor="#333333"
+        android:textSize="14sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#c6c6c6"/>
+
+    <Button
+        android:id="@+id/dialog_content2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/hintdialog_bottom_bg"
+        android:textColor="#333333"
+        android:textSize="14sp"/>
+
+</LinearLayout>

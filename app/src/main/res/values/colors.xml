@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <drawable name="transparent0">#00000000</drawable>
+    <color name="transparent">#00FFFFFF</color>
+
+    <color name="all_view_bg">#ffffff</color>
+    <drawable name="transparent3">#33000000</drawable>
+    <drawable name="transparent9">#99000000</drawable>
+
+    <color name="top_bar_bg_color">#fda52b</color>
+
+</resources>
